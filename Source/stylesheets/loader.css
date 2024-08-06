@@ -1,0 +1,123 @@
+@import url(../stylesheets/main-styles.css);
+
+.loader {
+  background-color: var(--loader-bg);
+  color: var(--loader-text);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  user-select: none;
+  overflow: hidden;
+  z-index: 99999;
+
+  /* Uncomment to disable Loader */
+  /* display: none; */
+}
+
+.loader-housing {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+  transition: backdrop-filter 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+    background-color 0.8s cubic-bezier(0.215, 0.61, 0.355, 1),
+    -webkit-backdrop-filter 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.loader-content {
+  font-family: "montserrat";
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.loader-background {
+  background-color: var(--loader-bg);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.stars-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  overflow: hidden;
+}
+
+.star {
+  border-radius: 50%;
+  background-color: var(--stars);
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  opacity: 0;
+}
+
+.shooting-star {
+  background-color: var(--stars);
+  height: 20px;
+  width: 1px;
+  position: absolute;
+  opacity: 0;
+  transform: rotate(315deg);
+}
+
+.star-1 {
+  top: 0;
+  left: 20%;
+}
+
+.star-2 {
+  top: 0;
+  left: 5%;
+}
+
+.star-3 {
+  top: 0;
+  left: 50%;
+}
+
+.star-4 {
+  top: 0;
+  left: 80%;
+}
+
+.star-5 {
+  top: 0;
+  left: 35%;
+}
+
+.loader-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.loader-text {
+  position: absolute;
+}
+
+.loader-text-span-1 {
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.loader-text-span-2 {
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.loader-text-span-3 {
+  opacity: 0;
+  filter: blur(5px);
+}

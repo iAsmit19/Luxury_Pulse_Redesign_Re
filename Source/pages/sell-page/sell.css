@@ -1,0 +1,23 @@
+@import url(../../stylesheets/main-styles.css);
+@import url(../../stylesheets/header.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+html,
+body {
+  background-color: black;
+  color: white;
+}
+::-webkit-scrollbar {
+  background-color: #161616;
+  height: 7px;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: #818181;
+}

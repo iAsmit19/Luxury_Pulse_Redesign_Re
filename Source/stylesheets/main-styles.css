@@ -21,24 +21,31 @@
   --global-background: #000000;
   --global-font: #ffffff;
   --section-headings-font: 30px;
+
   /* Scroll Bar */
   --scrollbar-bg: #242424;
   --scroll-thumb-bg: #9d9d9d;
+
   /* Site Padding (Inline) */
   --inline-padding: 7vw;
+
   /* Shortcut */
   --shortcut-border: #2323237d;
   --shortcut-text: #a8a8a8;
   --shortcut-font: 11px;
+
   /* Scroll Indicator */
   --scroll-indicator-border: #2c2c2ca8;
   --scroll-indicator-bg: #1c1c1caa;
+
   /* Cursor */
   --cursor-size: 15px;
+
   /* Loader */
   --loader-bg: #000000dc;
   --loader-text: #f7f7f7;
   --stars: #ffffff;
+
   /* Header */
   --header-border: #59595933;
   --header-bg: #0a0a0ae7;
@@ -50,6 +57,7 @@
   --header-input-font: 13px;
   --header-button-size: 18px;
   --header-button-hover: #2c2c2c77;
+
   /* Buy Panel */
   --buy-panel-bg: var(--header-bg);
   --buy-panel-text: #ffffff;
@@ -59,10 +67,12 @@
   --buy-panel-sub-text: #cacaca;
   --buy-panel-sub-indentation: 15px;
   --buy-panel-links: #d4d4d4;
+
   /* Search Panel */
   --search-panel-bg: var(--header-bg);
   --search-panel-heading-text: #cacaca;
   --search-panel-links-text: #fff;
+
   /* Hero */
   --hero-sub-indentation: 25px;
   --hero-sub-text: #ababab;
@@ -71,8 +81,10 @@
   --hero-cta-text: #e4e4e4;
   --hero-cta-font: 14px;
   --hero-cta-mover-bg: #000000bd;
+
   /* Quick Call Strip */
   --qcs-hover-shadow: rgba(255, 204, 0, 0.335);
+
   /* Monthly Section */
   --ms-section-border: #242424;
   --ms-section-border-hover: #404040;
@@ -90,6 +102,7 @@
   --ms-button-bg-hover: #131519;
   --ms-button-text: #cacaca;
   --ms-button-text-hover: #fff;
+
   /* Featured Listings Section */
   --fls-strip-button-bg: #101010;
   --fls-strip-button-text: #d8d8d8;
@@ -100,16 +113,16 @@
   --fls-product-content-bg-hover: #111111b6;
   --fls-product-text-padding: 30px;
   --fls-sub-indentation: 7px;
-  /* News and Stories Section */
-  /* --nss-sub-text: #cacaca; */
+
   /* Wallpapers Section */
   --ws-sub-text-indentation: 10px;
   --ws-sub-title: #cacaca;
   --ws-button-border: #292929;
+
   /* --ws-button-border-hover: #292929; */
   --ws-button-bg: #000000d7;
   --ws-heading-text: #fff;
-  --ws-form-input-border: #ddd;
+  --ws-form-input-border: #a5a5a5;
   --ws-input-bg: #6e6e6e6b;
   --ws-sub-text: #cacaca;
   --ws-form-button-border: #1f1f1f;
@@ -117,6 +130,13 @@
   --ws-form-button-bg: #000;
   --ws-form-button-bg-hover: #111;
   --ws-form-button-text: #cacaca;
+
+  /* Footer */
+  --footer-divider: #676767;
+  --footer-text: #c0c0c0;
+  --footer-links-text: #c0c0c0;
+  --footer-copyright-text: #afafaf;
+  --footer-highlighter-text: #ffd542;
 }
 
 * {
@@ -132,17 +152,18 @@ body {
   overflow-x: hidden;
 
   /* Comment to disable Loader */
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 body {
   overflow: hidden;
   /* Comment to Disable Loader */
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 ::-webkit-scrollbar {
   background-color: var(--scrollbar-bg);
+  height: 7px;
   width: 7px;
 }
 
@@ -361,5 +382,5 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'inter';
+  font-family: "inter";
 }

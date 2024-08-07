@@ -672,185 +672,6 @@ main {
   font-weight: 300;
 }
 
-/* .news-stories-section {
-  background-color: gray;
-  height: 80vh;
-  width: 100%;
-}
-
-.news-stories-section-housing {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.nss-heading {
-  height: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nss-heading h1 {
-  font-family: "cinzel";
-  font-size: var(--section-headings-font);
-  font-weight: 200;
-}
-
-.nss-content {
-  height: 80%;
-  width: 100%;
-}
-
-.nss-card {
-  border-radius: 12px;
-  background-color: #090909;
-  height: 300px;
-  width: 30vw;
-  z-index: 2;
-  overflow: hidden;
-  padding: 7px;
-}
-
-.nss-image {
-  border-radius: 7px;
-  height: 75%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.nss-image img {
-  height: 100%;
-  width: 100%;
-}
-
-#nss-date {
-  color: #cacaca;
-  font-family: "montserrat";
-  font-size: 11px;
-}
-
-#nss-title {
-  color: #ffffff;
-  font-family: "montserrat";
-  font-size: 18px;
-  font-weight: 100x;
-}
-
-.nss-card-content {
-  height: 25%;
-  width: 100%;
-  padding: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nss-info {
-  height: 100%;
-  width: 80%;
-}
-
-.nss-button {
-  height: 100%;
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#nss-button {
-  border-radius: 100rem;
-  background-color: #2f2f2f;
-  height: 60px;
-  width: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#nss-button img {
-  height: 30px;
-  width: 30px;
-}
-
-.nss-part-1 {
-  background-color: rgb(61, 61, 61);
-  height: 50%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline: var(--inline-padding);
-}
-
-.nss-strip {
-  background-color: #090909;
-  color: #cacaca;
-  height: 90px;
-  width: 100%;
-  position: absolute;
-  padding-inline: 20vw;
-  font-size: 52px;
-  font-family: "montserrat";
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-}
-
-.nss-strip-top {
-  text-align: end;
-  justify-content: flex-end;
-}
-
-.nss-strip-bottom {
-  text-align: start;
-  justify-content: flex-start;
-}
-
-#nss-click-embed-link {
-  color: #cacaca;
-  text-decoration: none;
-}
-
-.nss-click-embed {
-  border-radius: 12px;
-  background-color: #3c3b42;
-  padding: 2px 14px;
-  cursor: pointer;
-}
-
-.nss-part-2 {
-  background-color: gray;
-  height: 50%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline: var(--inline-padding);
-}
-
-.nss-sub-text {
-  height: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.nss-sub-text p {
-  color: var(--nss-sub-text);
-  font-family: "montserrat";
-  font-size: 11px;
-  font-weight: 100;
-} */
-
 .wallpapers-section {
   height: 80vh;
   width: 100%;
@@ -892,6 +713,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.ws-device-showcase img {
+  width: 600px;
 }
 
 .ws-explore-button {
@@ -1050,20 +875,26 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
 }
 
 .ws-input {
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   border-bottom: 1px solid var(--ws-form-input-border);
   background-color: transparent;
   color: var(--global-font);
   height: 30px;
-  width: 300px;
+  width: 350px;
   padding: 5px 10px;
   font-size: 15px;
-  font-family: "montserrat";
+  font-family: "cinzel";
+  transition: var(--global-transition);
+}
+
+.ws-input:focus {
+  /* border: 1px solid var(--ws-form-input-border); */
+  box-shadow: 0px 0px 100px 0px #000000;
 }
 
 .ws-input::placeholder {

@@ -12,7 +12,7 @@
   z-index: 99999;
 
   /* Uncomment to disable Loader */
-  display: none;
+  /* display: none; */
 }
 
 .loader-housing {
@@ -27,8 +27,8 @@
 }
 
 .loader-content {
-  font-family: "montserrat";
-  letter-spacing: 3px;
+  letter-spacing: 4px;
+  font-family: "cinzel";
   font-weight: 100;
   font-size: 0.8rem;
 }
@@ -101,6 +101,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 100;
   z-index: 5;
 }
 

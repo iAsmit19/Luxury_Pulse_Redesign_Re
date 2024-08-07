@@ -846,17 +846,57 @@ const theWeekSection = () => {
   });
 };
 
+const devNoteHeading = document.querySelector(".developer-note h4");
+const devNoteText = document.querySelector(".developer-note p");
+
+const theDeveloperNote = () => {
+  gsap.set(devNoteHeading, {
+    opacity: 0,
+    y: 10
+  });
+  gsap.set(devNoteText, {
+    opacity: 0,
+    y: 10
+  });
+  gsap.to(devNoteHeading, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: ".developer-note",
+      start: "top bottom",
+      end: "top 100%",
+      // markers: true,
+      toggleActions: "restart none reverse none"
+    }
+  });
+  gsap.to(devNoteText, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: ".developer-note",
+      start: "top bottom",
+      end: "top 100%",
+      // markers: true,
+      toggleActions: "restart none reverse none"
+    }
+  });
+};
+
 const EXECUTIONER = () => {
   theCursor();
   theScrollIndicator();
   theCaseStudyLinkTab();
-  // theLoader();
+  theLoader();
   theHeader();
   theHeroSection();
   theMonthlySectionSection();
   theFeaturedListingsSection();
-  theWallpaperSection();
   theWeekSection();
+  theDeveloperNote();
 };
 
 EXECUTIONER();

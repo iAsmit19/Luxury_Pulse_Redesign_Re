@@ -230,11 +230,14 @@ body {
 }
 
 .under-development-alert h1 {
-  font-size: 3vw;
+  font-size: 1.4rem;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .under-development-alert p {
-  font-size: 1.3vw;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .root {

@@ -7,7 +7,7 @@
     <meta name="author" content="Asmit Singh" />
     <meta
       name="description"
-      content="This is a Project where I have redesigned the Luxury Pulse Website"
+      content="This is a Redesigned Version of Luxury Pulse: The Luxury Marketplace"
     />
     <meta name="robots" content="index, follow" />
     <!-- Browser Tab Data -->
@@ -40,10 +40,11 @@
     />
     <!-- StyleSheets -->
     <link rel="stylesheet" href="./Source/stylesheets/main-styles.css" />
-    <link rel="stylesheet" href="./Source/stylesheets/loader.css" />
-    <link rel="stylesheet" href="./Source/stylesheets/header.css" />
-    <link rel="stylesheet" href="./Source/stylesheets/main.css" />
-    <link rel="stylesheet" href="./Source/stylesheets/footer.css" />
+    <link rel="stylesheet" href="./Source/stylesheets/responsive.css" />
+    <!-- <link rel="stylesheet" href="./Source/stylesheets/loader.css" /> -->
+    <!-- <link rel="stylesheet" href="./Source/stylesheets/header.css" /> -->
+    <!-- <link rel="stylesheet" href="./Source/stylesheets/main.css" /> -->
+    <!-- <link rel="stylesheet" href="./Source/stylesheets/footer.css" /> -->
   </head>
   <body>
     <div class="cursor">
@@ -70,6 +71,13 @@
       </svg>
     </div>
 
+    <div class="under-development-alert">
+      <div class="uda-housing">
+        <h1>Kindly Open on Bigger Screen</h1>
+        <p>Please visit on a larger screen. Our site is best viewed on desktop</p>
+      </div>
+    </div>
+    
     <div class="loader">
       <div class="loader-housing">
         <div class="loader-content">
@@ -99,6 +107,12 @@
                 id="header-logo"
                 src="./Source/assets/images/logo/version-1/luxury-pulse-logo-white.svg"
                 alt="Luxury Pulse"
+              />
+              <img
+              draggable="false"
+                src="./Source/assets/images/logo/mini-logo/logo-mini-version.svg"
+                alt=""
+                id="header-logo-mini"
               />
             </div>
           </div>
@@ -167,7 +181,7 @@
                     <button id="search-button">
                       <img
                         draggable="false"
-                        src="./Source/assets/icons/icons-search-unit/search icon.svg"
+                        src="./Source/assets/icons/icons-search-unit/search-icon.svg"
                         alt="Enter"
                       />
                     </button>
@@ -261,7 +275,6 @@
                     class="bp-v-separator"
                     src="./Source/assets/icons/icon-buy-panel/separator.svg"
                     alt=""
-                    draggable="false"
                     style="user-select: none"
                   />
                   <div class="bp-link bp-real-estate">
@@ -318,7 +331,6 @@
                     class="bp-v-separator"
                     src="./Source/assets/icons/icon-buy-panel/separator.svg"
                     alt=""
-                    draggable="false"
                     style="user-select: none"
                   />
                   <div class="bp-link bp-watches">
@@ -432,7 +444,6 @@
                     class="bp-v-separator"
                     src="./Source/assets/icons/icon-buy-panel/separator.svg"
                     alt=""
-                    draggable="false"
                     style="user-select: none"
                   />
                   <div class="bp-link bp-jets">
@@ -484,7 +495,6 @@
                     class="bp-v-separator"
                     src="./Source/assets/icons/icon-buy-panel/separator.svg"
                     alt=""
-                    draggable="false"
                     style="user-select: none"
                   />
                   <div class="bp-link bp-rentals">
@@ -518,7 +528,6 @@
                 class="bp-h-separator"
                 src="./Source/assets/icons/icon-buy-panel/separator-h.svg"
                 alt=""
-                draggable="false"
                 style="user-select: none"
               />
               <div class="bp-other-links">
@@ -592,7 +601,6 @@
                 id="cslt-main-icon"
                 src="./Source/assets/icons/icon-cs-link-tab/box_icon.svg"
                 alt="[_]"
-                draggable="false"
               />
             </div>
             <div class="cslt-link">
@@ -603,7 +611,6 @@
                   id="cslt-arrow"
                   src="./Source/assets/icons/icon-cta-button/arrow.svg"
                   alt=">"
-                  draggable="false"
               /></a>
             </div>
           </div>
@@ -1328,15 +1335,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="placeholder-section">
-          <h1>Under Development</h1>
-          <p>
-            This site is currently under development so the not-ready part is
-            hidden,
-          </p>
-          <p>Thank-you</p>
-          <p>Asmit</p>
-        </div> -->
       </main>
       <footer>
         <div class="footer-half-1">
@@ -1437,7 +1435,7 @@
         <div class="footer-half-2">
           <div class="footer-logo">
             <img
-            draggable="false"
+              draggable="false"
               src="./Source/assets/icons/icons-footer/luxury-pulse-footer-logo.svg"
               alt="Luxury Pulse"
             />

@@ -1,6 +1,6 @@
 @import url(../stylesheets/main-styles.css);
 
-footer {
+/* footer {
   height: 70vh;
   width: 100%;
   display: flex;
@@ -124,9 +124,9 @@ footer {
   align-items: center;
 }
 
-.footer-logo {
+.footer-logo { */
   /* background-color: #fff; */
-  height: 50px;
+  /* height: 50px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -155,4 +155,4 @@ footer {
 
 .footer-highlighted-text {
   color: var(--footer-highlighter-text);
-}
+}  */

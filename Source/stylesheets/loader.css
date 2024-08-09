@@ -1,6 +1,6 @@
 @import url(../stylesheets/main-styles.css);
 
-.loader {
+/* .loader {
   background-color: var(--loader-bg);
   color: var(--loader-text);
   height: 100vh;
@@ -9,12 +9,12 @@
   position: fixed;
   user-select: none;
   overflow: hidden;
-  z-index: 99999;
+  z-index: 99999; */
 
   /* Uncomment to disable Loader */
   /* display: none; */
-}
-
+/* } */
+/* 
 .loader-housing {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(30px);
@@ -122,4 +122,4 @@
 .loader-text-span-3 {
   opacity: 0;
   filter: blur(5px);
-}
+} */

@@ -62,17 +62,21 @@ const wsSectionButton = document.querySelector(".ws-submit");
 })();
 
 const theCursor = () => {
-  document.addEventListener("mousemove", (event) => {
-    gsap.to(cursor, {
-      display: "block",
-      // top: 0,
-      left: 0,
+  if ("ontouchstart" in window || navigator.maxTouchPoints) {
+    cursor.style.display = "none";
+  } else {
+    document.addEventListener("mousemove", (event) => {
+      gsap.to(cursor, {
+        display: "block",
+        // top: 0,
+        left: 0,
+      });
+      gsap.to(cursor, {
+        x: event.clientX,
+        y: event.clientY,
+      });
     });
-    gsap.to(cursor, {
-      x: event.clientX,
-      y: event.clientY,
-    });
-  });
+  }
 };
 
 const cursorOnElements = () => {
@@ -168,16 +172,6 @@ const loaderTextLogic = () => {
     loaderTextSpan_2.classList.add("loader-text-span-2");
     loaderTitlePlace_2.appendChild(loaderTextSpan_2);
   });
-
-  // let loaderText_3 = "";
-  // let loaderTextArray_3 = loaderText_3.split("");
-
-  // loaderTextArray_3.forEach((element) => {
-  //   let loaderTextSpan_3 = document.createElement("span");
-  //   loaderTextSpan_3.innerHTML = element;
-  //   loaderTextSpan_3.classList.add("loader-text-span-3");
-  //   loaderTitlePlace_3.appendChild(loaderTextSpan_3);
-  // });
 };
 
 const loaderAnimation = () => {
@@ -191,12 +185,10 @@ const loaderAnimation = () => {
   );
   loaderSpans_2.sort(() => Math.random() - 0.5);
 
-  // let loaderSpans_3 = Array.from(
-  //   document.querySelectorAll(".loader-text-span-3")
-  // );
-  // loaderSpans_3.sort(() => Math.random() - 0.5);
-
   let timeline = gsap.timeline();
+  gsap.set(document.querySelector("body"), {
+    height: "100vh"
+  });
   timeline.to(loaderSpans_1, {
     delay: 0.5,
     opacity: 1,
@@ -220,19 +212,7 @@ const loaderAnimation = () => {
     stagger: 0.05,
     ease: "power4.inOut",
   });
-  // timeline.to(loaderSpans_3, {
-  //   opacity: 1,
-  //   stagger: 0.05,
-  //   filter: "blur(0px)",
-  // });
-  // timeline.to(loaderSpans_3, {
-  //   opacity: 0,
-  //   duration: 0.5,
-  //   stagger: 0.05,
-  //   ease: "power4.inOut",
-  // });
   timeline.to(loader, {
-    // y: "-200%",
     opacity: 0,
     display: "none",
     duration: 2,
@@ -243,9 +223,6 @@ const loaderAnimation = () => {
       });
     },
   });
-  // timeline.to(loader, {
-
-  // });
 };
 
 const theLoader = () => {
@@ -253,6 +230,11 @@ const theLoader = () => {
   shootingStarAnimation();
   loaderTextLogic();
   loaderAnimation();
+};
+
+const disableLoader = () => {
+  document.querySelector(".loader").style.display = "none";
+  document.querySelector("body").style.height = "auto";
 };
 
 const scrollIndicator = document.querySelector(".scroll-indicator");
@@ -852,11 +834,11 @@ const devNoteText = document.querySelector(".developer-note p");
 const theDeveloperNote = () => {
   gsap.set(devNoteHeading, {
     opacity: 0,
-    y: 10
+    y: 10,
   });
   gsap.set(devNoteText, {
     opacity: 0,
-    y: 10
+    y: 10,
   });
   gsap.to(devNoteHeading, {
     opacity: 1,
@@ -868,8 +850,8 @@ const theDeveloperNote = () => {
       start: "top bottom",
       end: "top 100%",
       // markers: true,
-      toggleActions: "restart none reverse none"
-    }
+      toggleActions: "restart none reverse none",
+    },
   });
   gsap.to(devNoteText, {
     opacity: 1,
@@ -881,9 +863,17 @@ const theDeveloperNote = () => {
       start: "top bottom",
       end: "top 100%",
       // markers: true,
-      toggleActions: "restart none reverse none"
-    }
+      toggleActions: "restart none reverse none",
+    },
   });
+};
+
+const theMain = () => {
+  theHeroSection();
+  theMonthlySectionSection();
+  theFeaturedListingsSection();
+  theWeekSection();
+  theDeveloperNote();
 };
 
 const EXECUTIONER = () => {
@@ -891,12 +881,9 @@ const EXECUTIONER = () => {
   theScrollIndicator();
   theCaseStudyLinkTab();
   theLoader();
+  // disableLoader();
   theHeader();
-  theHeroSection();
-  theMonthlySectionSection();
-  theFeaturedListingsSection();
-  theWeekSection();
-  theDeveloperNote();
+  theMain();
 };
 
 EXECUTIONER();

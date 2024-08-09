@@ -1,0 +1,33 @@
+@import url(../stylesheets/main-styles.css);
+
+@media only screen and (orientation: portrait) {
+  #header-logo-mini {
+    display: flex;
+    width: 26px;
+  }  
+  #header-logo {
+    display: none;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #header-logo-mini {
+    display: none;
+    width: 26px;
+  }  
+  #header-logo {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .under-development-alert {
+    display: flex;
+  }
+  .loader {
+    display: none;
+  }
+  .root {
+    display: none;
+  }
+}

@@ -137,8 +137,8 @@ const shootingStarAnimation = () => {
 
   gsap.to(shootingStar, {
     height: "40px",
-    x: 1000,
-    y: 1000,
+    x: 1100,
+    y: 1100,
     opacity: 1,
     ease: "power4.in",
     filter: "blur(2px)",
@@ -880,8 +880,8 @@ const EXECUTIONER = () => {
   theCursor();
   theScrollIndicator();
   theCaseStudyLinkTab();
-  theLoader();
-  // disableLoader();
+  // theLoader();
+  disableLoader();
   theHeader();
   theMain();
 };

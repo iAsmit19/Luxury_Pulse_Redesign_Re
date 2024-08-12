@@ -4,7 +4,7 @@
   #header-logo-mini {
     display: flex;
     width: 26px;
-  }  
+  }
   #header-logo {
     display: none;
   }
@@ -14,13 +14,15 @@
   #header-logo-mini {
     display: none;
     width: 26px;
-  }  
+  }
   #header-logo {
     display: flex;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+/* Under Development Screen */
+/*****************************/
+/* @media only screen and (max-width: 600px) {
   .under-development-alert {
     display: flex;
   }
@@ -29,5 +31,609 @@
   }
   .root {
     display: none;
+  }
+} */
+/*****************************/
+/* Under Development Screen */
+
+/* 4K Screens */
+@media only screen and (min-width: 1441px) {
+  /* Root */
+  :root {
+    --inline-padding: 7vw;
+    --hero-cta-font: 14px;
+    --section-headings-font: 30px;
+  }
+
+  /* Loader */
+  .loader-text {
+    font-size: 1.5rem;
+  }
+
+  /* Header */
+  header {
+    height: 7vh;
+  }
+  #header-logo-mini {
+    width: 30px;
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .header-search-unit-housing {
+    display: flex;
+  }
+  .header-search-unit-small {
+    display: none;
+  }
+
+  /* Main */
+  /* Hero Section */
+  .hero-section {
+    height: 80vh;
+    width: 100%;
+  }
+  #hero-sub-heading {
+    font-size: 32px;
+  }
+  #hero-heading {
+    font-size: 60px;
+  }
+  .cta-button-wrapper {
+    height: 50px;
+    width: 200px;
+  }
+
+  /* Quick Call Strip */
+  .quick-call-strip {
+    height: 15vh;
+  }
+  #car-strip-icon {
+    width: 150px;
+  }
+  #real-estate-strip-icon {
+    width: 110px;
+  }
+  #watches-strip-icon {
+    width: 110px;
+  }
+  #yachts-strip-icon {
+    width: 140px;
+  }
+  #jets-strip-icon {
+    width: 140px;
+  }
+
+  /* Monthly Selection Section */
+  .monthly-selections-section {
+    height: 80vh;
+  }
+  .ms-section-card {
+    height: 450px;
+    width: 500px;
+  }
+}
+
+/* Large Laptop Screens */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Root */
+  :root {
+    --inline-padding: 5vw;
+    --hero-cta-font: 14px;
+    --section-headings-font: 28px;
+  }
+
+  /* Loader */
+  .loader-text {
+    font-size: 1.2rem;
+  }
+
+  /* Header */
+  header {
+    height: 7vh;
+  }
+  #header-logo-mini {
+    width: 30px;
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .header-search-unit-housing {
+    display: flex;
+  }
+  .header-search-unit-small {
+    display: none;
+  }
+
+  /* Main */
+  /* Hero Section */
+  .hero-section {
+    height: 80vh;
+    width: 100%;
+  }
+  #hero-sub-heading {
+    font-size: 28px;
+  }
+  #hero-heading {
+    font-size: 50px;
+  }
+  .cta-button-wrapper {
+    height: 50px;
+    width: 200px;
+  }
+
+  /* Quick Call Strip */
+  .quick-call-strip {
+    height: 15vh;
+  }
+  #car-strip-icon {
+    width: 130px;
+  }
+  #real-estate-strip-icon {
+    width: 90px;
+  }
+  #watches-strip-icon {
+    width: 90px;
+  }
+  #yachts-strip-icon {
+    width: 120px;
+  }
+  #jets-strip-icon {
+    width: 120px;
+  }
+
+  /* Monthly Selection Section */
+  .monthly-selections-section {
+    height: 80vh;
+  }
+  .ms-section-card {
+    height: 420px;
+    width: 480px;
+  }
+}
+
+/* Laptop Screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Root */
+  :root {
+    --inline-padding: 4vw;
+    --hero-cta-font: 13px;
+    --section-headings-font: 26px;
+  }
+
+  /* Loader */
+  .loader-text {
+    font-size: 1rem;
+  }
+
+  /* Header */
+  header {
+    height: 7vh;
+  }
+  #header-logo-mini {
+    width: 30px;
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .header-search-unit-housing {
+    display: none;
+  }
+  .header-search-unit-small {
+    display: flex;
+  }
+  .header-search-unit-small img {
+    height: 16px;
+    width: 16px;
+  }
+
+  /* Main */
+  /* Hero Section */
+  .hero-section {
+    height: 70vh;
+    width: 100%;
+  }
+  #hero-sub-heading {
+    font-size: 26px;
+  }
+  #hero-heading {
+    font-size: 46px;
+  }
+  .cta-button-wrapper {
+    height: 45px;
+    width: 190px;
+  }
+
+  /* Quick Call Strip */
+  .quick-call-strip {
+    height: 12vh;
+  }
+  #car-strip-icon {
+    width: 110px;
+  }
+  #real-estate-strip-icon {
+    width: 70px;
+  }
+  #watches-strip-icon {
+    width: 70px;
+  }
+  #yachts-strip-icon {
+    width: 120px;
+  }
+  #jets-strip-icon {
+    width: 120px;
+  }
+
+  /* Monthly Selection Section */
+  .monthly-selections-section {
+    height: 70vh;
+  }
+  .ms-section-card {
+    height: 380px;
+    width: 440px;
+  }
+}
+
+/* Tablet Screens */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  /* Root */
+  :root {
+    --inline-padding: 5vw;
+    --hero-cta-font: 12px;
+    --section-headings-font: 23px;
+  }
+
+  /* Loader */
+  .loader-text {
+    font-size: 0.9rem;
+  }
+
+  /* Header */
+  header {
+    height: 7.5vh;
+  }
+  #header-logo-mini {
+    width: 28px;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+  }
+  .header-search-unit-housing {
+    display: none;
+  }
+  .header-search-unit-small {
+    display: flex;
+  }
+  .header-search-unit-small img {
+    height: 15px;
+    width: 15px;
+  }
+  .navbar-menu img {
+    height: 26px;
+    width: auto;
+  }
+
+  /* Main */
+  /* Hero Section */
+  .hero-section {
+    height: 50vh;
+    width: 100%;
+  }
+  .hero-content-housing {
+    align-items: flex-start;
+  }
+  #hero-sub-heading {
+    font-size: 20px;
+  }
+  #hero-heading {
+    font-size: 30px;
+    white-space: wrap;
+  }
+  .cta-button-wrapper {
+    height: 40px;
+    width: 175px;
+  }
+
+  /* Quick Call Strip */
+  .quick-call-strip {
+    height: 12vh;
+  }
+  #car-strip-icon {
+    width: 70px;
+  }
+  #real-estate-strip-icon {
+    width: 50px;
+  }
+  #watches-strip-icon {
+    width: 50px;
+  }
+  #yachts-strip-icon {
+    width: 70px;
+  }
+  #jets-strip-icon {
+    width: 70px;
+  }
+
+  /* Monthly Selection Section */
+  .monthly-selections-section {
+    height: 50vh;
+  }
+  .ms-section-card {
+    height: 290px;
+    width: 320px;
+  }
+  .ms-arrow-holder {
+    display: none;
+  }
+  #ms-c-sub-title {
+    font-size: 7px;
+  }
+  #ms-c-additional-info {
+    font-size: 5px;
+  }
+}
+
+/* Large Mobile Screens */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  /* Root */
+  :root {
+    --inline-padding: 5vw;
+    --hero-cta-font: 11px;
+    --section-headings-font: 20px;
+  }
+
+  /* Loader */
+  .loader-text {
+    font-size: 0.9rem;
+  }
+
+  /* Header */
+  header {
+    height: 7.5vh;
+  }
+  #header-logo-mini {
+    width: 24px;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+  }
+  .header-search-unit-housing {
+    display: none;
+  }
+  .header-search-unit-small {
+    display: flex;
+  }
+  .header-search-unit-small img {
+    height: 14px;
+    width: 14px;
+  }
+  .navbar-menu img {
+    height: 24px;
+    width: auto;
+  }
+
+  /* Main */
+  /* Hero Section */
+  .hero-section {
+    height: 55vh;
+    width: 100%;
+  }
+  .hero-content-housing {
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+  #hero-sub-heading {
+    font-size: 20px;
+  }
+  #hero-heading {
+    font-size: 27px;
+    /* white-space: wrap; */
+  }
+  .cta-button-wrapper {
+    height: 40px;
+    width: 160px;
+  }
+
+  /* Quick Call Strip */
+  .quick-call-strip {
+    height: 12vh;
+  }
+  #car-strip-icon {
+    width: 70px;
+  }
+  #real-estate-strip-icon {
+    width: 50px;
+  }
+  #watches-strip-icon {
+    width: 50px;
+  }
+  #yachts-strip-icon {
+    width: 70px;
+  }
+  #jets-strip-icon {
+    width: 70px;
+  }
+}
+
+/* Medium Moblie Screens */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  /* Root */
+  :root {
+    --inline-padding: 5vw;
+    --hero-cta-font: 9px;
+    --section-headings-font: 18px;
+  }
+
+  /* Loader */
+  .loader-text {
+    font-size: 0.8rem;
+  }
+
+  /* Header */
+  header {
+    height: 7.5vh;
+  }
+  #header-logo-mini {
+    width: 24px;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+  }
+  .header-search-unit-housing {
+    display: none;
+  }
+  .header-search-unit-small {
+    display: flex;
+  }
+  .header-search-unit-small img {
+    height: 14px;
+    width: 14px;
+  }
+  .navbar-menu img {
+    height: 23px;
+    width: auto;
+  }
+
+  /* Main */
+  /* Hero Section */
+  .hero-section {
+    height: 50vh;
+    width: 100%;
+  }
+  .hero-content-housing {
+    align-items: flex-start;
+  }
+  #hero-sub-heading {
+    font-size: 14px;
+  }
+  #hero-heading {
+    font-size: 22px;
+  }
+  .cta-button-wrapper {
+    height: 30px;
+    width: 130px;
+  }
+
+  /* Quick Call Strip */
+  .quick-call-strip {
+    height: 10vh;
+  }
+  #car-strip-icon {
+    width: 60px;
+  }
+  #real-estate-strip-icon {
+    width: 40px;
+  }
+  #watches-strip-icon {
+    width: 40px;
+  }
+  #yachts-strip-icon {
+    width: 60px;
+  }
+  #jets-strip-icon {
+    width: 70px;
+  }
+}
+
+/* Small Moblie Screens */
+@media only screen and (max-width: 320px) {
+  /* Root */
+  :root {
+    --inline-padding: 3vw;
+    --hero-cta-font: 8px;
+    --section-headings-font: 14px;
+  }
+
+  /* Loader */
+  .loader-text {
+    font-size: 0.7rem;
+  }
+
+  /* Header */
+  header {
+    height: 8vh;
+  }
+  #header-logo-mini {
+    width: 20px;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+  }
+  .header-search-unit-housing {
+    display: none;
+  }
+  .header-search-unit-small {
+    display: flex;
+  }
+  .header-search-unit-small img {
+    height: 14px;
+    width: 14px;
+  }
+  .navbar-menu img {
+    height: 22px;
+    width: auto;
+  }
+
+  /* Main */
+  /* Hero Section */
+  .hero-section {
+    height: 50vh;
+    width: 100%;
+  }
+  .hero-content-housing {
+    align-items: center;
+  }
+  #hero-sub-heading {
+    font-size: 11px;
+  }
+  #hero-heading {
+    font-size: 16px;
+    /* white-space: wrap; */
+  }
+  .cta-button-wrapper {
+    height: 30px;
+    width: 140px;
+  }
+
+  /* Quick Call Strip */
+  .quick-call-strip {
+    height: 12vh;
+  }
+  #car-strip-icon {
+    width: 70px;
+  }
+  #real-estate-strip-icon {
+    width: 50px;
+  }
+  #watches-strip-icon {
+    width: 50px;
+  }
+  #yachts-strip-icon {
+    width: 70px;
+  }
+  #jets-strip-icon {
+    width: 70px;
   }
 }

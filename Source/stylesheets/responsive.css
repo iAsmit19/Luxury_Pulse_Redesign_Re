@@ -417,6 +417,10 @@
   #jets-strip-icon {
     width: 90px;
   }
+  .qcs-hr {
+    display: flex;
+    width: 100%;
+  }
 }
 
 /* Large Mobile Screens */

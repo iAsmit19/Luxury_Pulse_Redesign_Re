@@ -1201,6 +1201,14 @@ main {
   width: 140px;
 }
 
+.qcs-hr {
+  border: none;
+  background-color: #0c0c0c98;
+  display: none;
+  height: 1px;
+  width: 100%;
+}
+
 .monthly-selections-section {
   /* background-color: #1919194a; */
   background: rgb(0, 0, 0);

@@ -397,7 +397,7 @@
 @media only screen and (max-width: 522px) {
   /* Quick Call Strip */
   .quick-call-strip {
-    height: 50vh;
+    height: 60vh;
   }
   .quick-call-strip-housing {
     flex-direction: column;

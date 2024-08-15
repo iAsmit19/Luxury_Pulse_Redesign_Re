@@ -397,25 +397,25 @@
 @media only screen and (max-width: 522px) {
   /* Quick Call Strip */
   .quick-call-strip {
-    height: 70vh;
+    height: 50vh;
   }
   .quick-call-strip-housing {
     flex-direction: column;
   }
   #car-strip-icon {
-    width: 150px;
+    width: 110px;
   }
   #real-estate-strip-icon {
-    width: 130px;
+    width: 80px;
   }
   #watches-strip-icon {
-    width: 150px;
+    width: 90px;
   }
   #yachts-strip-icon {
-    width: 150px;
+    width: 90px;
   }
   #jets-strip-icon {
-    width: 150px;
+    width: 90px;
   }
 }
 

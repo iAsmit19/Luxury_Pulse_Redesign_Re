@@ -36,6 +36,18 @@
 /*****************************/
 /* Under Development Screen */
 
+/* Touch Screen */
+@media (pointer: coarse) {
+  .strip-icons:hover {
+    filter: none;
+  }
+}
+@media (hover: none) {
+  .strip-icons:hover {
+    filter: none;
+  }
+}
+
 /* 4K Screens */
 @media only screen and (min-width: 1441px) {
   /* Root */
@@ -347,17 +359,14 @@
   }
 
   /* Quick Call Strip */
-  .quick-call-strip {
-    height: 12vh;
-  }
   #car-strip-icon {
-    width: 70px;
+    width: 100px;
   }
   #real-estate-strip-icon {
-    width: 50px;
+    width: 80px;
   }
   #watches-strip-icon {
-    width: 50px;
+    width: 80px;
   }
   #yachts-strip-icon {
     width: 70px;
@@ -382,6 +391,31 @@
   }
   #ms-c-additional-info {
     font-size: 5px;
+  }
+}
+
+@media only screen and (max-width: 522px) {
+  /* Quick Call Strip */
+  .quick-call-strip {
+    height: 70vh;
+  }
+  .quick-call-strip-housing {
+    flex-direction: column;
+  }
+  #car-strip-icon {
+    width: 150px;
+  }
+  #real-estate-strip-icon {
+    width: 130px;
+  }
+  #watches-strip-icon {
+    width: 150px;
+  }
+  #yachts-strip-icon {
+    width: 150px;
+  }
+  #jets-strip-icon {
+    width: 150px;
   }
 }
 
@@ -449,26 +483,6 @@
     height: 40px;
     width: 160px;
   }
-
-  /* Quick Call Strip */
-  .quick-call-strip {
-    height: 12vh;
-  }
-  #car-strip-icon {
-    width: 70px;
-  }
-  #real-estate-strip-icon {
-    width: 50px;
-  }
-  #watches-strip-icon {
-    width: 50px;
-  }
-  #yachts-strip-icon {
-    width: 70px;
-  }
-  #jets-strip-icon {
-    width: 70px;
-  }
 }
 
 /* Medium Moblie Screens */
@@ -531,26 +545,6 @@
   .cta-button-wrapper {
     height: 30px;
     width: 130px;
-  }
-
-  /* Quick Call Strip */
-  .quick-call-strip {
-    height: 10vh;
-  }
-  #car-strip-icon {
-    width: 60px;
-  }
-  #real-estate-strip-icon {
-    width: 40px;
-  }
-  #watches-strip-icon {
-    width: 40px;
-  }
-  #yachts-strip-icon {
-    width: 60px;
-  }
-  #jets-strip-icon {
-    width: 70px;
   }
 }
 

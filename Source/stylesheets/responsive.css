@@ -380,11 +380,14 @@
     height: 50vh;
   }
   .ms-section-card {
-    height: 290px;
-    width: 320px;
+    height: 240px;
+    width: 290px;
   }
   .ms-arrow-holder {
     display: none;
+  }
+  .ms-c-title {
+    font-size: 7px;
   }
   #ms-c-sub-title {
     font-size: 7px;
@@ -392,8 +395,17 @@
   #ms-c-additional-info {
     font-size: 5px;
   }
+  .ms-card-price {
+    font-size: 12px;
+  }
+  .ms-card-button {
+    height: 18px;
+    width: 84px;
+    font-size: 9px;
+  }
 }
 
+/* Extra Large Screen [Transition to Mobile] */
 @media only screen and (max-width: 522px) {
   /* Quick Call Strip */
   .quick-call-strip {
@@ -428,6 +440,9 @@
   }
   .monthly-selections-section-housing {
     padding-inline: 0;
+  }
+  .ms-cards-dragger {
+    gap: 20px;
   }
   .ms-card-container {
     border: none;
@@ -466,7 +481,7 @@
     font-size: 11px;
   }
   .ms-section-sub-text {
-    font-size: 7px;
+    font-size: 8px;
     text-align: center;
   }
 }

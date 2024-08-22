@@ -187,7 +187,7 @@ const loaderAnimation = () => {
 
   let timeline = gsap.timeline();
   gsap.set(document.querySelector("body"), {
-    height: "100vh"
+    height: "100vh",
   });
   timeline.to(loaderSpans_1, {
     delay: 0.5,
@@ -828,8 +828,10 @@ const theWeekSection = () => {
   });
 };
 
+const developerNote = document.querySelector(".developer-note");
 const devNoteHeading = document.querySelector(".developer-note h4");
 const devNoteText = document.querySelector(".developer-note p");
+const bottomMarker = document.querySelector(".bottom-marker");
 
 const theDeveloperNote = () => {
   gsap.set(devNoteHeading, {
@@ -840,13 +842,24 @@ const theDeveloperNote = () => {
     opacity: 0,
     y: 10,
   });
+
+  window.addEventListener("scroll", () => {
+    const markerPosition = bottomMarker.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (markerPosition <= windowHeight) {
+      developerNote.style.zIndex = "1";
+    } else {
+      developerNote.style.zIndex = "-1";
+    }
+  });
   gsap.to(devNoteHeading, {
     opacity: 1,
     y: 0,
     duration: 1,
     ease: "power2.inOut",
     scrollTrigger: {
-      trigger: ".developer-note",
+      trigger: ".dev-note-cover",
       start: "top bottom",
       end: "top 100%",
       // markers: true,
@@ -854,12 +867,14 @@ const theDeveloperNote = () => {
     },
   });
   gsap.to(devNoteText, {
+    // delay: 0.5,
     opacity: 1,
     y: 0,
     duration: 1,
     ease: "power2.inOut",
     scrollTrigger: {
-      trigger: ".developer-note",
+      // scroll: ".root",
+      trigger: ".dev-note-cover",
       start: "top bottom",
       end: "top 100%",
       // markers: true,

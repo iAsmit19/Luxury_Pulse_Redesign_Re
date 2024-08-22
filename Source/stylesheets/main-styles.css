@@ -167,7 +167,7 @@ body {
 }
 
 body {
-  background-color: #000;
+  /* background-color: #000; */
   overflow: hidden;
   /* Handled by the disableLoader Function */
   /* Comment to Disable Loader */
@@ -242,7 +242,7 @@ body {
 }
 
 .root {
-  background-color: var(--global-background);
+  /* background-color: var(--global-background); */
   color: var(--global-font);
 }
 
@@ -301,7 +301,7 @@ body {
 }
 
 .case-study-link-tab {
-  border: 1px solid var(--shortcut-border);
+  /* border: 1px solid var(--shortcut-border); */
   border-radius: 100px;
   background-color: var(--scroll-indicator-bg);
   backdrop-filter: blur(30px);
@@ -382,11 +382,15 @@ body {
   font-family: "inter";
 }
 
+/* Developer's Note */
 .developer-note {
   background-color: #f2f2f2;
   color: #0f0f0f;
   height: 30vh;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,6 +398,7 @@ body {
   gap: 20px;
   font-family: "sf-pro";
   user-select: none;
+  z-index: -1;
 }
 
 .developer-note p {
@@ -404,10 +409,10 @@ body {
 }
 
 .developer-note a {
-  border-radius: 2px;
-  background-color: rgba(198, 170, 221, 0.667);
+  border-radius: 6px;
+  background-color: rgba(240, 229, 248, 0.667);
   color: #272727;
-  box-shadow: 5px 5px 20px 0px rgba(89, 70, 104, 0.486);
+  box-shadow: 5px 5px 20px 0px rgba(227, 203, 245, 0.486);
   padding: 3px 7px;
   text-decoration: none;
   transition: var(--global-transition);
@@ -1160,6 +1165,7 @@ main {
 
 .quick-call-strip {
   border-bottom: 1px solid var(--header-border);
+  background-color: var(--global-background);
   height: 15vh;
   width: 100%;
   user-select: none;
@@ -1542,6 +1548,7 @@ main {
 }
 
 .featured-listing-section {
+  background-color: var(--global-background);
   height: 80vh;
   width: 100%;
 }
@@ -1753,6 +1760,7 @@ main {
 }
 
 .wallpapers-section {
+  background-color: var(--global-background);
   height: 80vh;
   width: 100%;
   display: flex;
@@ -2002,8 +2010,8 @@ main {
 }
 
 /* Footer */
-
 footer {
+  background-color: var(--global-background);
   height: 70vh;
   width: 100%;
   display: flex;
@@ -2014,7 +2022,7 @@ footer {
 }
 
 .footer-half-1 {
-  height: 70%;
+  height: 49vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -2120,7 +2128,7 @@ footer {
 }
 
 .footer-half-2 {
-  height: 30%;
+  height: 21vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -2158,4 +2166,12 @@ footer {
 
 .footer-highlighted-text {
   color: var(--footer-highlighter-text);
+}
+
+.dev-note-cover {
+  /* background-color: red; */
+  height: 30vh;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
 }

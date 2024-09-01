@@ -849,16 +849,16 @@ const theDeveloperNote = () => {
     y: 10,
   });
 
-  window.addEventListener("scroll", () => {
-    const markerPosition = bottomMarker.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+  // window.addEventListener("scroll", () => {
+  //   const markerPosition = bottomMarker.getBoundingClientRect().top;
+  //   const windowHeight = window.innerHeight;
 
-    if (markerPosition <= windowHeight) {
-      developerNote.style.zIndex = "1";
-    } else {
-      developerNote.style.zIndex = "-1";
-    }
-  });
+  //   if (markerPosition <= windowHeight) {
+  //     developerNote.style.zIndex = "1";
+  //   } else {
+  //     developerNote.style.zIndex = "-1";
+  //   }
+  // });
   gsap.to(devNoteHeading, {
     opacity: 1,
     y: 0,

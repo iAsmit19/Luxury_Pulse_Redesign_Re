@@ -901,8 +901,8 @@ const EXECUTIONER = () => {
   theCursor();
   theScrollIndicator();
   theCaseStudyLinkTab();
-  // theLoader();
-  disableLoader();
+  theLoader();
+  // disableLoader();
   theHeader();
   theMain();
 };

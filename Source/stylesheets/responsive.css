@@ -671,9 +671,9 @@
   }
   .fls-content-housing {
     grid-template-areas:
-      ". . ."
-      ". . ."
-      ". . .";
+      ". ."
+      ". ."
+      ". .";
   }
   #fls-card-8 {
     display: none;
@@ -805,9 +805,9 @@
   }
   .fls-content-housing {
     grid-template-areas:
-      ". . ."
-      ". . ."
-      ". . .";
+      ". ."
+      ". ."
+      ". .";
   }
   #fls-card-8 {
     display: none;
@@ -960,9 +960,9 @@
   }
   .fls-content-housing {
     grid-template-areas:
-      ". . ."
-      ". . ."
-      ". . .";
+      ". ."
+      ". ."
+      ". .";
   }
   #fls-card-8 {
     display: none;

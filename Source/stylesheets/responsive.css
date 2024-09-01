@@ -38,8 +38,14 @@
 
 /* Touch Screen */
 @media (pointer: coarse) {
+  /* Quick Links Strip */
   .strip-icons:hover {
     filter: none;
+  }
+
+  /* Featured Listing Section */
+  .fls-product-content {
+    display: none;
   }
 }
 @media (hover: none) {
@@ -127,6 +133,11 @@
     height: 450px;
     width: 500px;
   }
+
+  /* Featured Listings Section */
+  .fls-filter-strip {
+    gap: 1.5rem;
+  }
 }
 
 /* Large Laptop Screens */
@@ -207,6 +218,11 @@
   .ms-section-card {
     height: 420px;
     width: 480px;
+  }
+
+  /* Featured Listings Section */
+  .fls-filter-strip {
+    gap: 1.5rem;
   }
 }
 
@@ -293,6 +309,11 @@
     height: 380px;
     width: 440px;
   }
+
+  /* Featured Listings Section */
+  .fls-filter-strip {
+    gap: 1.3rem;
+  }
 }
 
 /* Tablet Screens */
@@ -377,10 +398,10 @@
 
   /* Monthly Selection Section */
   .monthly-selections-section {
-    height: 50vh;
+    height: 60vh;
   }
   .ms-section-card {
-    height: 240px;
+    height: 220px;
     width: 290px;
   }
   .ms-arrow-holder {
@@ -405,6 +426,22 @@
   }
   .ms-section-sub-text {
     font-size: 7px;
+  }
+
+  /* Featured Listings Section */
+  .fls-filter-strip {
+    gap: 1.2rem;
+  }
+  .fls-content-housing {
+    grid-template-areas:
+      ". . ."
+      ". . .";
+  }
+  #fls-card-8 {
+    display: none;
+  }
+  #fls-card-7 {
+    display: none;
   }
 }
 
@@ -457,7 +494,7 @@
     padding-inline: 10px;
   }
   .ms-section-card {
-    height: 270px;
+    height: 240px;
     width: 290px;
   }
   .ms-arrow-holder {
@@ -479,7 +516,7 @@
     font-size: 14px;
   }
   .ms-card-button {
-    height: 27px;
+    height: 24px;
     width: 100px;
     font-size: 11px;
   }
@@ -489,6 +526,23 @@
   }
   .ms-cards-dragger {
     padding-inline: 40px;
+  }
+
+  /* Featured Listings Section */
+  .fls-filter-strip {
+    gap: 1rem;
+  }
+  .fls-content-housing {
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+  }
+  #fls-card-8 {
+    display: none;
+  }
+  #fls-card-7 {
+    display: none;
   }
 }
 
@@ -577,7 +631,7 @@
     padding-inline: 10px;
   }
   .ms-section-card {
-    height: 270px;
+    height: 240px;
     width: 290px;
   }
   .ms-arrow-holder {
@@ -599,7 +653,7 @@
     font-size: 14px;
   }
   .ms-card-button {
-    height: 27px;
+    height: 24px;
     width: 100px;
     font-size: 11px;
   }
@@ -609,6 +663,23 @@
   }
   .ms-cards-dragger {
     padding-inline: 40px;
+  }
+
+  /* Featured Listings Section */
+  .fls-filter-strip {
+    gap: 0.9rem;
+  }
+  .fls-content-housing {
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+  #fls-card-8 {
+    display: none;
+  }
+  #fls-card-7 {
+    display: none;
   }
 }
 
@@ -694,8 +765,8 @@
     padding-inline: 10px;
   }
   .ms-section-card {
-    height: 270px;
-    width: 290px;
+    height: 240px;
+    width: 270px;
   }
   .ms-arrow-holder {
     display: none;
@@ -716,7 +787,7 @@
     font-size: 14px;
   }
   .ms-card-button {
-    height: 27px;
+    height: 23px;
     width: 100px;
     font-size: 11px;
   }
@@ -726,6 +797,23 @@
   }
   .ms-cards-dragger {
     padding-inline: 10px;
+  }
+
+  /* Featured Listings Section */
+  .fls-filter-strip {
+    gap: 0.9rem;
+  }
+  .fls-content-housing {
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+  #fls-card-8 {
+    display: none;
+  }
+  #fls-card-7 {
+    display: none;
   }
 }
 
@@ -811,7 +899,7 @@
   #jets-strip-icon {
     width: 70px;
   }
-    
+
   /* Monthly Selection Section */
   .monthly-selections-section {
     height: 65vh;
@@ -832,8 +920,8 @@
     padding-inline: 10px;
   }
   .ms-section-card {
-    height: 270px;
-    width: 290px;
+    height: 230px;
+    width: 260px;
   }
   .ms-arrow-holder {
     display: none;
@@ -854,7 +942,7 @@
     font-size: 14px;
   }
   .ms-card-button {
-    height: 27px;
+    height: 20px;
     width: 100px;
     font-size: 11px;
   }
@@ -864,5 +952,22 @@
   }
   .ms-cards-dragger {
     padding-inline: 40px;
+  }
+  
+  /* Featured Listings Section */
+  .fls-filter-strip {
+    gap: 0.9rem;
+  }
+  .fls-content-housing {
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+  #fls-card-8 {
+    display: none;
+  }
+  #fls-card-7 {
+    display: none;
   }
 }

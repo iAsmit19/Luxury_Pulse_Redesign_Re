@@ -1549,20 +1549,26 @@ main {
 
 .featured-listing-section {
   background-color: var(--global-background);
-  height: 80vh;
+  /* height: 80vh; */
   width: 100%;
 }
 
 .featured-listing-section-housing {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .fls-heading {
-  height: 10%;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding: 40px 0px;
 }
 
 .fls-heading h2 {
@@ -1573,6 +1579,7 @@ main {
 
 .fls-filter-strip {
   height: 10%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1589,33 +1596,44 @@ main {
   font-size: 12px;
   font-weight: 300;
   padding: 5px 12px;
+  white-space: nowrap;
   user-select: none;
   cursor: pointer;
 }
 
 .fls-content {
   /* background-color: rgb(17, 17, 17); */
-  height: 80%;
+  /* height: 80%; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fls-content-housing {
   height: 100%;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, 1fr); */
   /* grid-template-rows: auto; */
+  /* gap: 7px; */
+  
+  height: fit-content;
+  width: fit-content;
+  display: grid;
   gap: 7px;
-  /* padding: var(--fls-product-grid-gap); */
-  padding: 30px 20px;
+  grid-template-areas:
+    ". . . ."
+    ". . . .";
+
+  padding: 30px 7px;
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
 
 .fls-product-card {
-  /* height: 280px; */
-  /* width: 460px; */
-  height: 28vh;
-  width: 24vw;
+  /* max-height: 28vh; */
+  /* max-width: 24vw; */
   overflow: hidden;
   transition: var(--global-transition);
 }

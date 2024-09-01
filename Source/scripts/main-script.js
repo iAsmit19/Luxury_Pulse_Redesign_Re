@@ -812,8 +812,14 @@ const flsFilterLogic = () => {};
 
 const theFeaturedListingsSection = () => {
   filterButtonAnimation();
-  featuredProductHover();
   flsFilterLogic();
+  window.onresize = () => {
+    if (window.matchMedia("(pointer: coarse)").matches) {
+    }
+    else {
+      featuredProductHover();
+    }
+  };
 };
 
 const theWeekSection = () => {

@@ -53,6 +53,17 @@
   .ws-explore-button:hover::after {
     animation-play-state: paused;
   }
+
+  /* Weekly Subscription Section */
+  .ws-submit:hover {
+    border: 1px solid var(--ws-form-button-border);
+    background-color: var(--ws-form-button-bg);
+  }
+
+  /* Footer */
+  .footer-link a::before {
+    display: none;
+  }
 }
 @media (hover: none) {
   /* Quick Links Strip */
@@ -69,6 +80,14 @@
   .ws-explore-button:hover::before,
   .ws-explore-button:hover::after {
     animation-play-state: paused;
+  }
+
+  /* Footer */
+  .footer-link a::before {
+    display: none;
+  }
+  .footer-link-section h3 {
+    font-size: 30px;
   }
 }
 
@@ -165,7 +184,22 @@
     font-size: 40px;
   }
 
-  
+  /* Footer */
+  .footer-half-1 {
+    height: 49vh;
+  }
+  .footer-link-section h3 {
+    font-size: 30px;
+  }
+  .footer-link a {
+    font-size: 12px;
+  }
+  .fs-title h3 {
+    font-size: 18px;
+  }
+  .fs-social-links img {
+    width: 26px;
+  }
 }
 
 /* Large Laptop Screens */
@@ -270,6 +304,39 @@
   .ws-explore-button {
     border-radius: 8px;
     scale: 0.8;
+  }
+
+  /* Week Subscription Section */
+  .ws-header-heading {
+    font-size: 30px;
+  }
+  .ws-header-sub-text {
+    font-size: 12px;
+  }
+  .ws-input {
+    height: 27px;
+    width: 340px;
+    font-size: 13px;
+  }
+  .ws-submit {
+    font-size: 11px;
+  }
+
+  /* Footer */
+  .footer-half-1 {
+    height: 49vh;
+  }
+  .footer-link-section h3 {
+    font-size: 30px;
+  }
+  .footer-link a {
+    font-size: 12px;
+  }
+  .fs-title h3 {
+    font-size: 18px;
+  }
+  .fs-social-links img {
+    width: 26px;
   }
 }
 
@@ -379,6 +446,28 @@
   .ws-explore-button {
     border-radius: 8px;
     scale: 0.7;
+  }
+
+  /* Week Subscription Section */
+  .ws-header-heading {
+    font-size: 23px;
+  }
+  .ws-header-sub-text {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .ws-input {
+    height: 25px;
+    width: 300px;
+    font-size: 11px;
+  }
+  .ws-submit {
+    font-size: 9px;
+  }
+
+  /* Footer */
+  .footer-link-section h3 {
+    font-size: 30px;
   }
 }
 
@@ -546,6 +635,39 @@
     border-radius: 8px;
     scale: 0.7;
   }
+
+  /* Week Subscription Section */
+  .week-sub-section {
+    height: 40vh;
+  }
+  .ws-section-header {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+  }
+  .ws-header-heading {
+    font-size: 23px;
+  }
+  .ws-header-sub-text {
+    font-size: 11px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .week-section-form {
+    height: 50%;
+    width: 100%;
+  }
+  .ws-input {
+    height: 25px;
+    width: 300px;
+    font-size: 11px;
+  }
+  .ws-submit {
+    font-size: 9px;
+  }
+  .ws-section-housing {
+    flex-direction: column;
+  }
 }
 
 /* Extra Large Screen [Transition to Mobile] */
@@ -677,6 +799,39 @@
   .ws-explore-button {
     border-radius: 8px;
     scale: 0.7;
+  }
+
+  /* Week Subscription Section */
+  .week-sub-section {
+    height: 40vh;
+  }
+  .ws-section-header {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+  }
+  .ws-header-heading {
+    font-size: 23px;
+  }
+  .ws-header-sub-text {
+    font-size: 11px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .week-section-form {
+    height: 50%;
+    width: 100%;
+  }
+  .ws-input {
+    height: 25px;
+    width: 300px;
+    font-size: 11px;
+  }
+  .ws-submit {
+    font-size: 9px;
+  }
+  .ws-section-housing {
+    flex-direction: column;
   }
 }
 
@@ -816,35 +971,37 @@
     display: none;
   }
 
-  /* Wallpaper Section */
-  .wallpapers-section {
-    /* height: 65vh; */
-    height: 55vh;
-    flex-direction: column;
+  /* Week Subscription Section */
+  .week-sub-section {
+    height: 40vh;
   }
-  .ws-heading {
-    height: 30%;
+  .ws-section-header {
+    height: 40%;
     width: 100%;
     align-items: center;
   }
-  .ws-sub-title p {
+  .ws-header-heading {
+    font-size: 19px;
+  }
+  .ws-header-sub-text {
     font-size: 9px;
-  }
-  .ws-title h2 {
-    font-size: 20px;
     text-align: center;
+    white-space: nowrap;
   }
-  .ws-content {
-    height: auto;
+  .week-section-form {
+    height: 50%;
     width: 100%;
   }
-  .ws-device-showcase img {
-    height: auto;
-    width: 280px;
+  .ws-input {
+    height: 25px;
+    width: 300px;
+    font-size: 11px;
   }
-  .ws-explore-button {
-    border-radius: 8px;
-    scale: 0.6;
+  .ws-submit {
+    font-size: 9px;
+  }
+  .ws-section-housing {
+    flex-direction: column;
   }
 }
 
@@ -1011,6 +1168,39 @@
     border-radius: 8px;
     scale: 0.6;
   }
+
+  /* Week Subscription Section */
+  .week-sub-section {
+    height: 40vh;
+  }
+  .ws-section-header {
+    height: 40%;
+    width: 100%;
+    align-items: center;
+  }
+  .ws-header-heading {
+    font-size: 16px;
+  }
+  .ws-header-sub-text {
+    font-size: 7px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .week-section-form {
+    height: 50%;
+    width: 100%;
+  }
+  .ws-input {
+    height: 25px;
+    width: 230px;
+    font-size: 11px;
+  }
+  .ws-submit {
+    font-size: 9px;
+  }
+  .ws-section-housing {
+    flex-direction: column;
+  }
 }
 
 /* Small Moblie Screens */
@@ -1167,35 +1357,36 @@
     display: none;
   }
 
-  /* Wallpaper Section */
-  .wallpapers-section {
-    /* height: 65vh; */
-    height: 50vh;
-    flex-direction: column;
-    gap: 20px;
+  /* Week Subscription Section */
+  .week-sub-section {
+    height: 40vh;
   }
-  .ws-heading {
-    height: 20%;
+  .ws-section-header {
+    height: 40%;
     width: 100%;
     align-items: center;
   }
-  .ws-sub-title p {
-    font-size: 6px;
+  .ws-header-heading {
+    font-size: 16px;
   }
-  .ws-title h2 {
-    font-size: 14px;
+  .ws-header-sub-text {
+    font-size: 7px;
     text-align: center;
+    white-space: nowrap;
   }
-  .ws-content {
-    height: auto;
+  .week-section-form {
+    height: 50%;
     width: 100%;
   }
-  .ws-device-showcase img {
-    height: auto;
-    width: 200px;
+  .ws-input {
+    height: 25px;
+    width: 230px;
+    font-size: 11px;
   }
-  .ws-explore-button {
-    border-radius: 8px;
-    scale: 0.5;
+  .ws-submit {
+    font-size: 9px;
+  }
+  .ws-section-housing {
+    flex-direction: column;
   }
 }

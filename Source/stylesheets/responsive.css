@@ -38,6 +38,11 @@
 
 /* Touch Screen */
 @media (pointer: coarse) {
+  /* Header */
+  nav a:before {
+    display: none;
+  }
+
   /* Quick Links Strip */
   .strip-icons:hover {
     filter: none;
@@ -66,6 +71,11 @@
   }
 }
 @media (hover: none) {
+  /* Header */
+  nav a:before {
+    display: none;
+  }
+
   /* Quick Links Strip */
   .strip-icons:hover {
     filter: none;
@@ -122,6 +132,9 @@
     display: flex;
   }
   .header-search-unit-small {
+    display: none;
+  }
+  .navbar-menu-panel {
     display: none;
   }
 
@@ -256,6 +269,9 @@
     display: flex;
   }
   .header-search-unit-small {
+    display: none;
+  }
+  .navbar-menu-panel {
     display: none;
   }
 
@@ -423,6 +439,9 @@
   .header-search-unit-small img {
     height: 16px;
     width: 16px;
+  }
+  .navbar-menu-panel {
+    display: none;
   }
 
   /* Main */
@@ -607,6 +626,9 @@
   .navbar-menu img {
     height: 26px;
     width: auto;
+  }
+  .navbar-menu-panel nav {
+    padding: 10%;
   }
 
   /* Main */
@@ -829,6 +851,23 @@
 
 /* Extra Large Screen [Transition to Mobile] */
 @media only screen and (max-width: 522px) {
+  /* Header */
+  .nmp-housing {
+    height: fit-content;
+    width: 100%;
+    border-bottom-left-radius: 0px;
+  }
+  .navbar-menu-panel nav {
+    flex-direction: row;
+  }
+  .navbar-menu-panel nav a {
+    padding: 0;
+  }
+  .navbar-menu-panel nav hr,
+  .navbar-menu-panel hr {
+    display: none;
+  }
+
   /* Quick Call Strip */
   .quick-call-strip {
     height: 60vh;
@@ -1102,6 +1141,22 @@
     height: 24px;
     width: auto;
   }
+  .nmp-housing {
+    border-bottom-left-radius: 0px;
+    height: fit-content;
+    width: 100%;
+    padding: 0%;
+  }
+  .navbar-menu-panel nav {
+    flex-direction: row;
+  }
+  .navbar-menu-panel nav a {
+    padding: 0;
+  }
+  .navbar-menu-panel nav hr,
+  .navbar-menu-panel hr {
+    display: none;
+  }
 
   /* Main */
   /* Hero Section */
@@ -1341,6 +1396,22 @@
   .navbar-menu img {
     height: 23px;
     width: auto;
+  }
+  .nmp-housing {
+    border-bottom-left-radius: 0px;
+    height: fit-content;
+    width: 100%;
+  }
+  .navbar-menu-panel nav {
+    flex-direction: row;
+    padding: 10% 0;
+  }
+  .navbar-menu-panel nav a {
+    padding: 5%;
+  }
+  .navbar-menu-panel nav hr,
+  .navbar-menu-panel hr {
+    display: none;
   }
 
   /* Main */
@@ -1600,6 +1671,22 @@
   .navbar-menu img {
     height: 22px;
     width: auto;
+  }
+  .nmp-housing {
+    border-bottom-left-radius: 0px;
+    height: fit-content;
+    width: 100%;
+  }
+  .navbar-menu-panel nav {
+    flex-direction: row;
+    padding: 10% 0;
+  }
+  .navbar-menu-panel nav a {
+    padding: 2%;
+  }
+  .navbar-menu-panel nav hr,
+  .navbar-menu-panel hr {
+    display: none;
   }
 
   /* Main */

@@ -624,10 +624,50 @@ const buyPanelLogic = () => {
   });
 };
 
+const navbarMenuIcon = document.querySelector(".navbar-menu");
+const navbarMenuPanel = document.querySelector(".navbar-menu-panel");
+const nmpHousing = document.querySelector(".nmp-housing");
+let navbarPanelToggle = false;
+
+const navbarPanel = () => {
+  navbarMenuIcon.addEventListener("click", () => {
+    if (navbarPanelToggle) {
+      navbarPanelToggle = !navbarPanelToggle;
+      gsap.to(navbarMenuPanel, {
+        opacity: 0,
+        ease: "power2.inOut",
+        duration: 0.5,
+        delay: 0.2,
+        overwrite: true,
+      });
+    } else {
+      navbarPanelToggle = !navbarPanelToggle;
+      gsap.to(navbarMenuPanel, {
+        opacity: 1,
+        ease: "power2.inOut",
+        duration: 0.5,
+        delay: 0.2,
+        overwrite: true,
+      });
+    }
+  });
+  navbarMenuPanel.addEventListener("click", () => {
+    navbarPanelToggle = !navbarPanelToggle;
+    gsap.to(navbarMenuPanel, {
+      opacity: 0,
+      ease: "power2.inOut",
+      duration: 0.5,
+      delay: 0.2,
+      overwrite: true,
+    });
+  });
+};
+
 const theHeader = () => {
   navBar();
   searchBar();
   buyPanelLogic();
+  navbarPanel();
 };
 
 const heroButtonLogic = () => {
@@ -815,8 +855,7 @@ const theFeaturedListingsSection = () => {
   flsFilterLogic();
   window.onresize = () => {
     if (window.matchMedia("(pointer: coarse)").matches) {
-    }
-    else {
+    } else {
       featuredProductHover();
     }
   };

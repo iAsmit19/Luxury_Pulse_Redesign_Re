@@ -465,9 +465,9 @@ body {
 
 .loader-content {
   letter-spacing: 4px;
-  font-family: "cinzel";
+  font-family: "sf-pro";
   font-weight: 100;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .loader-background {
@@ -544,22 +544,25 @@ body {
 
 .loader-text {
   position: absolute;
-  font-size: 1rem;
+  font-size: 0rem;
 }
 
 .loader-text-span-1 {
   opacity: 0;
   filter: blur(5px);
+  font-size: 0.8rem;
 }
 
 .loader-text-span-2 {
   opacity: 0;
   filter: blur(5px);
+  font-size: 0.8rem;
 }
 
 .loader-text-span-3 {
   opacity: 0;
   filter: blur(5px);
+  font-size: 0.8rem;
 }
 
 /* Header */

@@ -52,6 +52,9 @@
   .fls-product-content {
     display: none;
   }
+  .fls-product-card:hover {
+    transform: translateZ(20px);
+  }
 
   /* Wallpaper Section */
   .ws-explore-button:hover::before,
@@ -70,36 +73,36 @@
     display: none;
   }
 }
-@media (hover: none) {
-  /* Header */
-  nav a:before {
+/* @media (hover: none) { */
+/* Header */
+/* nav a:before {
     display: none;
-  }
+  } */
 
-  /* Quick Links Strip */
-  .strip-icons:hover {
+/* Quick Links Strip */
+/* .strip-icons:hover {
     filter: none;
-  }
+  } */
 
-  /* Featured Listing Section */
-  .fls-product-content {
+/* Featured Listing Section */
+/* .fls-product-content {
     display: none;
-  }
+  } */
 
-  /* Wallpaper Section */
-  .ws-explore-button:hover::before,
+/* Wallpaper Section */
+/* .ws-explore-button:hover::before,
   .ws-explore-button:hover::after {
     animation-play-state: paused;
-  }
+  } */
 
-  /* Footer */
-  .footer-link a::before {
+/* Footer */
+/* .footer-link a::before {
     display: none;
   }
   .footer-link-section h3 {
     font-size: 30px;
   }
-}
+} */
 
 /* 4K Screens */
 @media only screen and (min-width: 1441px) {

@@ -635,6 +635,7 @@ const navbarPanel = () => {
       navbarPanelToggle = !navbarPanelToggle;
       gsap.to(navbarMenuPanel, {
         opacity: 0,
+        display: "none",
         ease: "power2.inOut",
         duration: 0.5,
         delay: 0.2,
@@ -644,6 +645,7 @@ const navbarPanel = () => {
       navbarPanelToggle = !navbarPanelToggle;
       gsap.to(navbarMenuPanel, {
         opacity: 1,
+        display: "flex",
         ease: "power2.inOut",
         duration: 0.5,
         delay: 0.2,
@@ -655,6 +657,7 @@ const navbarPanel = () => {
     navbarPanelToggle = !navbarPanelToggle;
     gsap.to(navbarMenuPanel, {
       opacity: 0,
+      display: "none",
       ease: "power2.inOut",
       duration: 0.5,
       delay: 0.2,
@@ -940,8 +943,8 @@ const EXECUTIONER = () => {
   theCursor();
   theScrollIndicator();
   theCaseStudyLinkTab();
-  theLoader();
-  // disableLoader();
+  // theLoader();
+  disableLoader();
   theHeader();
   theMain();
 };
